@@ -30,3 +30,13 @@ This project integrates Pi-hole for network wide ad-blocking, Unbound for privat
 </p>
 <p align="center">
   <img src="https://i.imgur.com/fJxMVMU.png" height="55%" width="55%" alt=Pihole Dashboard"/>
+  </p>
+  
+<h2>Step 6: Install WireGuard so my start device can tunnel to my home network and access pihole and its features. I will be installing WireGaurd without scripts because the PiVPN script is EOL and doesnt support Linus Mint</h2>
+<p align="center">
+  <img src="https://i.imgur.com/wfIjFdS.png" height="55%" width="55%" alt=Terminal"/>
+  <h3>I will be using these commands to create a private/public key pair for the Server and my phone</h3>
+  <p align="center">
+  <img src="https://i.imgur.com/GuagIdc.png" height="55%" width="55%" alt=Terminal"/>
+  <h3>Create a config file manually nano /etc/wireguard/wg0.conf and replace Keys with generated keys</h3>
+  
