@@ -32,11 +32,27 @@ This project integrates Pi-hole for network wide ad-blocking, Unbound for privat
   <img src="https://i.imgur.com/fJxMVMU.png" height="55%" width="55%" alt=Pihole Dashboard"/>
   </p>
   
-<h2>Step 6: Install WireGuard so my start device can tunnel to my home network and access pihole and its features. I will be installing WireGaurd without scripts because the PiVPN script is EOL and doesnt support Linus Mint</h2>
+<h2>Step 6: Install WireGuard so my start device can tunnel to my home network and access pihole and its features. I will be installing WireGaurd without scripts because the PiVPN script is EOL and doesnt support Linus Mint.</h2>
 <p align="center">
   <img src="https://i.imgur.com/wfIjFdS.png" height="55%" width="55%" alt=Terminal"/>
-  <h3>I will be using these commands to create a private/public key pair for the Server and my phone</h3>
-  <p align="center">
+  <h3>I will be using these commands to create a private/public key pair for the Server and my phone.</h3>
+    <p align="center">
   <img src="https://i.imgur.com/GuagIdc.png" height="55%" width="55%" alt=Terminal"/>
-  <h3>Create a config file manually nano /etc/wireguard/wg0.conf and replace Keys with generated keys</h3>
+  <h3>Create a config file manually nano /etc/wireguard/wg0.conf and replace Keys with generated keys.</h3>
+    <p align="center">
+  <img src="https://i.imgur.com/VJoykEb.png" height="55%" width="55%" alt=Terminal"/>
+  <img src="https://i.imgur.com/1Kewbd6.png" height="55%" width="55%" alt=Terminal"/>
+  <h3>Give WireGuard perrmission to route the traffic and make it permanant.</h3>
+    <p align="center">
+  <img src="https://i.imgur.com/GWvW7yZ.png" height="55%" width="55%" alt=Terminal"/>
+      <h3>Enable the server.</h3>
+      <p align="center">
+  <img src="https://i.imgur.com/ynO3miy.png" height="55%" width="55%" alt=Terminal"/>
+      <h3>Start the server.</h3>
+        <p align="center">
+  <img src="https://i.imgur.com/1stslgL.png" height="55%" width="55%" alt=Terminal"/>
+      <h3>Create a text file for phone settings so you can generate a QR code using "nano phone.conf" and replace the server key and phone keys with the ones generated earlier.</h3>
+          <p align="center">
+  <img src="https://i.imgur.com/svlEz5r.png" height="55%" width="55%" alt=Terminal"/>
+      <h3>Get the WireGuard on phone and scan the QR code.</h3>
   
