@@ -55,4 +55,10 @@ This project integrates Pi-hole for network wide ad-blocking, Unbound for privat
           <p align="center">
   <img src="https://i.imgur.com/svlEz5r.png" height="55%" width="55%" alt=Terminal"/>
       <h3>Get the WireGuard on phone and scan the QR code.</h3>
+            <p align="center">
+  <img src="https://i.imgur.com/DbKaeIa.png" height="55%" width="55%" alt=Router settings porforward"/>
+      <h3>Open up UDP port 51820 so WireGuard can connect to home network.</h3>
+      <p align="center">
+  <img src="https://i.imgur.com/C4x7ea9.png" height="55%" width="55%" alt=Router settings porforward"/>
+      <h3>On smartphone using mobile data with vpn tunnel on check to see if pihole server can be connected to if yes the lab was successful and now we can access our home network outside of our home network.</h3>
   
