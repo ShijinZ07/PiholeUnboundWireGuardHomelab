@@ -11,9 +11,9 @@ This project integrates Pi-hole for network-wide ad-blocking, Unbound for privat
 </p>
 <br />
 
-<h2>Step 2: Set IP of server to static (Servers should never have changing IPs).</h2>
+<h2>Step 2: Set IP of server to static by going into your router and reserving the IP address so it wont be reassigned (Servers should never have changing IPs).</h2>
 <p align="center">
-  <img src="https://i.imgur.com/2VBYWZM.png" width="55%" alt="Network Settings"/>
+  <img src="https://i.imgur.com/P3XqXnH.png" width="55%" alt="Network Settings"/>
 </p>
 
 <h2>Step 3: Install Pi-hole. Run the installer command in terminal and go through the prompts on the blue screen. At the end of the installer, you will be given a password. WRITE THIS DOWN!</h2>
@@ -33,7 +33,7 @@ This project integrates Pi-hole for network-wide ad-blocking, Unbound for privat
 <h2>Step 5: Connect Pi-hole to Unbound.</h2>
 <p>We are going to go to Pi-hole's dashboard page (http://PiholesIPAddress/admin). Go to <b>Settings</b>, uncheck the DNS provider, and use Unbound as a local DNS at <code>127.0.0.1#5335</code>. Check the "Permit all origins" box to allow the DNS resolver to respond to requests from WireGuard.</p>
 <p align="center">
-  <img src="https://i.imgur.com/fJxMVMU.png" width="55%" alt="Pihole Dashboard"/>
+  <img src="https://i.imgur.com/Yogimhp.png" width="55%" alt="Pihole Dashboard"/>
 </p>
 
 <h2>Step 6: Install WireGuard.</h2>
@@ -50,12 +50,11 @@ This project integrates Pi-hole for network-wide ad-blocking, Unbound for privat
 <h3>Create a config file manually (<code>nano /etc/wireguard/wg0.conf</code>) and replace keys with the generated keys.</h3>
 <p align="center">
   <img src="https://i.imgur.com/VJoykEb.png" width="55%" alt="Terminal"/>
-  <img src="https://i.imgur.com/1Kewbd6.png" width="55%" alt="Terminal"/>
 </p>
 
 <h3>Give WireGuard permission to route the traffic and make it permanent by uncommenting the line "net.ipv4.ip_forward=1".</h3>
 <p align="center">
-  <img src="https://i.imgur.com/GWvW7yZ.png" width="55%" alt="Terminal"/>
+  <img src="https://i.imgur.com/ehjup9B.png" width="55%" alt="Terminal"/>
 </p>
 
 <h3>Enable the server.</h3>
