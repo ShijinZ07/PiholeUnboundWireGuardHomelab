@@ -1,7 +1,29 @@
-# PiholeUnboundWireGuard-Homelab
+# Secure Home DNS & VPN Gateway
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/pi-hole/graphics/refs/heads/master/Vortex/vortex_with_text.svg" width="15%" alt="Pihole"/>
+  <img src="https://www.netdata.cloud/img/unbound.png" width="25%" alt="Unbound"/>
+  <img src="https://www.computerhope.com/jargon/w/wireguard.png" width="30%" alt="WireGuard"/>
+</p>
+<br />
 
 <h1>Description</h1>
-This project integrates Pi-hole for network-wide ad-blocking, Unbound for private DNS resolution, and WireGuard to securely extend these protections to my mobile devices while I am away from home.
+📌 Project Overview
+This project documents the deployment of a privacy-focused network gateway. It integrates Pi-hole for network-wide ad-blocking, Unbound for recursive, private DNS resolution, and WireGuard to securely extend these protections to mobile devices while off-site.
+
+> **⚠️ Disclaimer:** This project was developed in a **controlled lab environment** for **educational and demonstration purposes**. While these configurations are functional, they are provided "as-is." Users should exercise caution and ensure they have a recovery plan before modifying their primary network infrastructure.
+
+### 🚀 Key Features
+* **Network-Wide Privacy:** Automatically blocks advertisements and tracking telemetries for all devices on the network without client-side software.
+* **Recursive DNS:** By using Unbound, the network no longer relies on upstream providers (like Google or Cloudflare), reducing the data footprint left with third parties.
+* **Encrypted Remote Access:** WireGuard provides a secure "tunnel" back to the home network, allowing for secure browsing on public Wi-Fi.
+
+### 📖 Learning Objectives
+The goal of this project was to gain hands-on experience with:
+* **Linux Administration:** Managing services via CLI and configuring static IP assignments.
+* **Networking Fundamentals:** Understanding DNS records, port forwarding, and VPN protocols.
+* **Network Security:** Implementing local recursive DNS to prevent DNS hijacking and spoofing.
+
 <br />
 <br />
 
